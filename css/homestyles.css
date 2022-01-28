@@ -1,4 +1,4 @@
-*{
+    *{
       box-sizing: border-box;
     }
 
@@ -9,37 +9,19 @@
       font-family: Copperplate Gothic Light;
     }
 
-    .logo {
-      display: flex;
-      justify-content: left;
-      padding-right: 51%;
-    }
 
-    .logo img {
-      width: 109.5px;
-      height: 100px;
-      padding: 3px;
-    }
-
-    .logo h1 {
-      padding: 5px;
-    }
     .wrap {
       display: flex;
       justify-content: right;
       align-items:right;
       min-height: 10px;
-      background: #8692B8;
-      border: 3px solid white;
-      overflow:hidden;
+      padding-top: 10px;
     }
 
     /*Global Navigation*/
 
     .item {
-      padding-right: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 5px;
     }
 
     .item a {
@@ -125,7 +107,7 @@
      
     .search{
       float:right;
-      padding-top: 10px;
+      margin:3px;
     }
           
     .search button{
@@ -145,63 +127,81 @@
       font-size: 18px;
     }
 
-    header {
-      border:  5px solid white;
-      border-radius: 25px;
+    /*Header*/
+
+    header{
+      text-align: center;
+      padding: 100px;
+      font-size: 25px;
+    }
+
+    .headertext{
+      border: 3px white solid;
       background-color: #BDC6DF;
-      padding: 20px;
+      border-radius: 25px;
     }
 
-    header h1{
-      transform: skewX(-30deg);
+    .headerimage img {
+      border: 5px white solid;
+      width: 200px;
+      background-color: #BDC6DF;
+      border-radius: 25px;
     }
 
-    /*Main Article*/
+    /*Video*/
 
-    .main  {
+    .video {
+      border: 5px white solid;
+      border-radius: 25px; 
+      background-color: #BDC6DF;
+    }
+
+    .video h2 {
+      text-align: center;
+    }
+
+    video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    /* Blog Preview*/
+
+    .preview {
       display: flex;
+      align-items: center;
+      justify-content: center;
       border:  5px solid white;
       border-radius: 25px;
       background-color: #BDC6DF;
+    } 
+
+    .preview img {
       padding: 20px;
+      max-width: 150%;
     }
 
-    .text h3 {
-      color: mediumpurple;
-      position: relative;
-      animation-name: greeting;
-      font-size: 50px;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      font-family: 'Brush Script MT', cursive;
-    }
-
-    @keyframes greeting {
-      0%   {color:mediumpurple}
-      25%  {color:mediumslateblue}
-      50%  {color:slateblue}
-      75%  {color:darkslateblue}
-      100% {color:mediumpurple}
-    }
-
-    .myImage {
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-
-    .myImage img {
-      width: 301px;
-      height: 443px;
-      border:  5px solid white;
-      border-radius: 25px;
-      background-color: #BDC6DF;
+    .previewimage {
+      float: right;
     }
 
     .text {
-      padding-left: 20px;
-      margin-top: auto;
-      margin-bottom: auto;
       font-size: 20px;
+      padding-left: 7%;
+      padding-bottom: 10px;
+    }
+
+    .text a{
+      font-style: italic;
+      text-decoration: none;
+      color: black;
+    }
+
+    .text a:hover {
+      color: purple;
     }
 
     /*Share Buttons*/
@@ -292,7 +292,7 @@
 
       /*Footer*/
 
-footer {
+    footer {
         background-color: #E1E9FF;
         color: black;
         width: 100%;
