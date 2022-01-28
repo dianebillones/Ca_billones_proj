@@ -1,0 +1,371 @@
+*{
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-image: url(https://data.whicdn.com/images/354295074/original.jpg?t=1616883156);
+      font-size: 16px;
+      font-family: Copperplate Gothic Light;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: left;
+      padding-right: 51%;
+    }
+
+    .logo img {
+      width: 109.5px;
+      height: 100px;
+      padding: 3px;
+    }
+
+    .logo h1 {
+      padding: 5px;
+    }
+    .wrap {
+      display: flex;
+      justify-content: right;
+      align-items:right;
+      min-height: 10px;
+      background: #8692B8;
+      border: 3px solid white;
+      overflow:hidden;
+    }
+
+    /*Global Navigation*/
+
+    .item {
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .item a {
+      text-decoration: none;
+    }
+
+    .btn-Home{
+      display: block;
+      border: 0;
+      font-size:16px;
+      padding: 16px 30px;
+      border-radius: 30px;
+      background: #5AB9EA;
+      color: black;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      clear: bottom;
+      border: 3px white solid
+    }
+
+    .btn-Home:hover,
+    .btn-Home:focus{
+      background: #8692B8;
+    }
+    .btn-Home:active{
+      background: #8692B8;
+    }
+
+    .btn-Blog{
+      display: block;
+      border: 0;
+      font-size:16px;
+      padding: 16px 33px;
+      border-radius: 30px;
+      background: #84CEEB;
+      color: black;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      clear: bottom;
+      border: 3px white solid;
+    }
+
+    .btn-Blog:hover,
+    .btn-Blog:focus{
+      background: #8692B8;
+    }
+    .btn-Blog:active{
+      background: #8692B8;
+    }
+
+    .btn-About{
+      display: block;
+      border: 0;
+      font-size:16px;
+      padding: 16px 30px;
+      border-radius: 30px;
+      background: #A1919A;
+      color: black;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      clear: bottom;
+      border: 3px white solid;
+    }
+
+    .btn-About:hover,
+    .btn-About:focus{
+      background: #8692B8;
+    }
+
+    .btn-About:active{
+      background: #8692B8;
+    }
+
+    /*Search Bar*/
+
+   .search input[type=text]{
+      width:213px;
+      height:25px;
+      border-radius :25px;
+      border: none;
+      margin-top: 15px;
+    }
+     
+    .search{
+      float:right;
+      padding-top: 10px;
+    }
+          
+    .search button{
+      background-color: #0074D9;
+      color: #f2f2f2;
+      float: right;
+      padding: 5px 10px;
+      margin-right: 16px;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 25px;
+      margin-top: 15px;
+    }
+
+    .search i{
+      font-size: 18px;
+    }
+
+    header {
+      border:  5px solid white;
+      border-radius: 25px;
+      background-color: #BDC6DF;
+      padding: 20px;
+    }
+
+    header h1{
+      transform: skewX(-30deg);
+    }
+
+    /*Main Article*/
+
+    .main  {
+      display: flex;
+      border:  5px solid white;
+      border-radius: 25px;
+      background-color: #BDC6DF;
+      padding: 20px;
+    }
+
+    .text h3 {
+      color: mediumpurple;
+      position: relative;
+      animation-name: greeting;
+      font-size: 50px;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    @keyframes greeting {
+      0%   {color:mediumpurple}
+      25%  {color:mediumslateblue}
+      50%  {color:slateblue}
+      75%  {color:darkslateblue}
+      100% {color:mediumpurple}
+    }
+
+    .myImage {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .myImage img {
+      width: 301px;
+      height: 443px;
+      border:  5px solid white;
+      border-radius: 25px;
+      background-color: #BDC6DF;
+    }
+
+    .text {
+      padding-left: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: 20px;
+    }
+
+    /*Share Buttons*/
+
+    .sbuttons {
+        bottom: 5%;
+        position: fixed;
+        margin: 20px;
+        right: 0;
+    }
+
+    .sbutton {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 20px auto 0;
+        cursor: pointer;
+        -webkit-transition: all .1s ease-out;
+        transition: all .1s ease-out;
+        position: relative;
+    }
+
+    .sbutton:active,
+    .sbutton:focus,
+    .sbutton:hover {
+        background-color: transparent;
+    } 
+
+    .sbutton:not(:last-child) {
+        width: 60px;
+        height: 60px;
+        margin: 20px auto 0;
+        opacity: 0;
+    }
+  
+    .sbuttons:hover .sbutton:not(:last-child) {
+        opacity: 1;
+        width: 64.5px;
+        height: 64.5px;
+        margin: 15px auto 0;
+    }
+
+    .sbutton:nth-last-child(1) {
+        -webkit-transition-delay: 25ms;
+        transition-delay: 25ms;
+    }
+
+    .sbutton:not(:last-child):nth-last-child(2) {
+        -webkit-transition-delay: 20ms;
+        transition-delay: 20ms;
+    }
+
+    .sbutton:not(:last-child):nth-last-child(3) {
+        -webkit-transition-delay: 40ms;
+        transition-delay: 40ms;
+    }
+
+    .sbutton:not(:last-child):nth-last-child(4) {
+        -webkit-transition-delay: 60ms;
+        transition-delay: 60ms;
+    }
+
+    [tooltip]:before {
+        font-family: 'Roboto';
+        font-weight: 600;
+        border-radius: 2px;
+        background-color: #585858;
+        color: #fff;
+        content: attr(tooltip);
+        font-size: 12px;
+        visibility: hidden;
+        opacity: 0;
+        padding: 5px 7px;
+        margin-left: 10px;
+        position: absolute;
+        right: 110%;
+        bottom: 20%;
+        white-space: nowrap;
+    }
+
+    [tooltip]:hover:before,
+    [tooltip]:hover:after {
+        visibility: visible;
+        opacity: 1;
+    }
+
+      /*Footer*/
+
+footer {
+        background-color: #E1E9FF;
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        min-height: 10px;
+        font-size: 15px;
+        font-style: italic;
+        border-top: 3px solid white;
+    }
+
+    .SocialText {
+      text-align: center;
+    }
+
+    .Socmed {
+      display: flex;
+      padding-top: 10px;
+      justify-content: center;
+    }
+    .link {
+        position: absolute;
+        width: 5%;
+        height: 5%;
+    }
+
+    .facebook a {
+        float: left;
+        width: 75px;
+        height: 60px;
+        background: url('../images/socmedsprite.png') no-repeat -85px -113px/250px 250px;
+    }
+
+    .instagram a {
+        float: left;
+        width: 75px;
+        height: 60px;
+        background: url('../images/socmedsprite.png') no-repeat -10px -115px/250px 250px;
+    }
+
+    .twitter a {
+        float: left;
+        width: 75px;
+        height: 60px;
+        background: url('../images/socmedsprite.png') no-repeat -15px -55px/250px 250px;
+    }
+
+    .facebook a:hover {
+      float: left;
+      width: 75px;
+      height: 60px;
+      background: url('../images/socmedsprite.png') no-repeat -85px -113px/250px 250px;
+      transform: rotate(30deg);
+    }
+
+    .instagram a:hover {
+      float: left;
+      width: 75px;
+      height: 60px;
+      background: url('../images/socmedsprite.png') no-repeat -10px -115px/250px 250px;
+      transform: rotate(30deg);
+    }
+
+    .twitter a:hover{
+      float: left;
+      width: 75px;
+      height: 60px;
+      background: url('../images/socmedsprite.png') no-repeat -15px -55px/250px 250px;
+      transform: rotate(30deg);
+    }
+
+    .directcontact {
+      display: block;
+      text-align: center;
+    }
